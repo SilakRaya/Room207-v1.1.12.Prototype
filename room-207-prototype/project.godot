@@ -15,12 +15,15 @@ run/main_scene="uid://bv7uk01qb30s2"
 config/features=PackedStringArray("4.6", "Mobile")
 config/icon="res://icon.svg"
 
+[autoload]
+
+BgMusic="*uid://cn5mjo66dbf7t"
+
 [display]
 
 window/size/viewport_width=1280
 window/size/viewport_height=720
 window/size/resizable=false
-window/size/borderless=true
 
 [dotnet]
 

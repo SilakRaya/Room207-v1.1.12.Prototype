@@ -6,7 +6,7 @@
 [ext_resource type="FontFile" uid="uid://4scieg81k82o" path="res://Fonts/fibre-font.otf" id="3_iwfq2"]
 [ext_resource type="Texture2D" uid="uid://d3aerqw7qcnrw" path="res://ASSets/logo_large_monochrome_light.png" id="4_qoqlk"]
 [ext_resource type="PackedScene" uid="uid://0e6pg0204rx3" path="res://JolinaFrown/JolinaFrown.tscn" id="6_vwu2b"]
-[ext_resource type="Texture2D" uid="uid://cqlya3pwemonw" path="res://icon.svg" id="7_du1xd"]
+[ext_resource type="Texture2D" uid="uid://ii18nwjh57dy" path="res://Characters/Marvin.png" id="7_48x7w"]
 [ext_resource type="Script" uid="uid://c08sghksh2358" path="res://Scripts/button.gd" id="8_ym82n"]
 [ext_resource type="PackedScene" uid="uid://m5nv4ab5w0yn" path="res://Main-Menu/Hand/Hand.tscn" id="9_48x7w"]
 
@@ -491,8 +491,8 @@ anchor_left = 0.5
 anchor_right = 0.5
 offset_left = -332.0
 offset_top = 70.0
-offset_right = 323.00208
-offset_bottom = 270.0001
+offset_right = 323.00195
+offset_bottom = 270.00012
 grow_horizontal = 2
 text = "ROOM207"
 label_settings = SubResource("LabelSettings_7r1g0")
@@ -530,8 +530,8 @@ anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = -125.5
 offset_top = 21.5
-offset_right = 117.49707
-offset_bottom = 92.50012
+offset_right = 117.496704
+offset_bottom = 92.5
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
@@ -549,8 +549,8 @@ anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = -128.0
 offset_top = 111.0
-offset_right = 114.99756
-offset_bottom = 182.00067
+offset_right = 114.99719
+offset_bottom = 182.00073
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
@@ -568,8 +568,8 @@ anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = -123.5
 offset_top = 199.5
-offset_right = 119.49878
-offset_bottom = 270.50012
+offset_right = 119.49841
+offset_bottom = 270.50024
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
@@ -598,15 +598,15 @@ flat = true
 
 [node name="MarvinPlaceholder" type="Sprite2D" parent="." unique_id=1386794644]
 position = Vector2(195.45453, 1060.9089)
-scale = Vector2(2.424716, 4.6661925)
-texture = ExtResource("7_du1xd")
+scale = Vector2(0.76679504, 0.7256551)
+texture = ExtResource("7_48x7w")
 
 [node name="Marvin" type="Button" parent="." unique_id=456161969]
 layout_mode = 0
 offset_left = 372.72726
 offset_top = 1118.1818
-offset_right = 607.7275
-offset_bottom = 1204.1823
+offset_right = 607.7274
+offset_bottom = 1204.1824
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("3_iwfq2")
 theme_override_font_sizes/font_size = 77

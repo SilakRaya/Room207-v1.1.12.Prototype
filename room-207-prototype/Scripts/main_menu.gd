@@ -2,9 +2,6 @@ extends Control
 var characterSelects = ""
 
 func _ready():
-	$AnimationPlayer.play("RESET")
-	$AnimationPlayer.play("Intro")
-	await $AnimationPlayer.animation_finished
 	$AnimationPlayer.play("MainMenu")
 
 func _on_new_game_pressed():

@@ -2,9 +2,8 @@
 
 [ext_resource type="Texture2D" uid="uid://bix07m6hwcm0u" path="res://SilakRayaIntro/textures/instance25.png" id="1_h7a2f"]
 [ext_resource type="Script" uid="uid://ngrxqdrphrtb" path="res://Scripts/main_menu.gd" id="1_iwfq2"]
-[ext_resource type="Texture2D" uid="uid://bfjme4hlumbhi" path="res://SilakRayaIntro/textures/instance27.png" id="2_qoqlk"]
+[ext_resource type="Texture2D" uid="uid://by8g0eys7wt8k" path="res://Main-Menu/Acosta/Jolina's Background.jpg" id="2_ym82n"]
 [ext_resource type="FontFile" uid="uid://4scieg81k82o" path="res://Fonts/fibre-font.otf" id="3_iwfq2"]
-[ext_resource type="Texture2D" uid="uid://d3aerqw7qcnrw" path="res://ASSets/logo_large_monochrome_light.png" id="4_qoqlk"]
 [ext_resource type="PackedScene" uid="uid://m5nv4ab5w0yn" path="res://Main-Menu/Hand/Hand.tscn" id="9_48x7w"]
 [ext_resource type="PackedScene" uid="uid://cn5mjo66dbf7t" path="res://Ost/bg_music.tscn" id="10_2a578"]
 [ext_resource type="PackedScene" uid="uid://rk0glj2udx3d" path="res://SilakRayaIntro/SilakRayaIntro.tscn" id="11_0iell"]
@@ -12,54 +11,6 @@
 [sub_resource type="LabelSettings" id="LabelSettings_7r1g0"]
 font = ExtResource("3_iwfq2")
 font_size = 200
-font_color = Color(0, 0, 0, 1)
-
-[sub_resource type="Animation" id="Animation_ym82n"]
-resource_name = "EpisodeSelect"
-length = 1.5
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("VBoxContainer/Room207:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0.033333335, 1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(372.72726, 53.636368), Vector2(370.9091, -150)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("Control:position")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0.53333336, 1.5),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(-647.2727, 275.45453), Vector2(-652.72723, 1109.0908)]
-}
-
-[sub_resource type="Animation" id="Animation_48x7w"]
-resource_name = "EpisodeSelection"
-
-[sub_resource type="Animation" id="Animation_5oj8p"]
-resource_name = "Intro"
-length = 4.1
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("SilakRayaIntro:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(2, 4.0333333),
-"transitions": PackedFloat32Array(2.1435447, 0.435275),
-"update": 0,
-"values": [Vector2(-55.454544, -22.727272), Vector2(-55.455, -800)]
-}
 
 [sub_resource type="Animation" id="Animation_0iell"]
 resource_name = "MainMenu"
@@ -77,120 +28,8 @@ tracks/0/keys = {
 "values": [Vector2(254.16699, 700), Vector2(254.16663, -70.90909)]
 }
 
-[sub_resource type="Animation" id="Animation_dmqj3"]
-resource_name = "NewGame"
-length = 2.0
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("VBoxContainer/Room207:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(249.66663, 70), Vector2(372.72726, 53.636368)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("VBoxContainer/Room207/VBoxContainer/NewGame:position")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0.26666665, 1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(458.66663, 261.5833), Vector2(458.667, 700)]
-}
-tracks/2/type = "value"
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/path = NodePath("VBoxContainer/Room207:scale")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/keys = {
-"times": PackedFloat32Array(0, 1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(1, 1), Vector2(0.635, 0.635)]
-}
-tracks/3/type = "value"
-tracks/3/imported = false
-tracks/3/enabled = true
-tracks/3/path = NodePath("VBoxContainer/Room207/VBoxContainer/Options:position")
-tracks/3/interp = 1
-tracks/3/loop_wrap = true
-tracks/3/keys = {
-"times": PackedFloat32Array(0.16666669, 1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(456.16663, 351.0833), Vector2(456.167, 800)]
-}
-tracks/4/type = "value"
-tracks/4/imported = false
-tracks/4/enabled = true
-tracks/4/path = NodePath("VBoxContainer/Room207/VBoxContainer/Credits:position")
-tracks/4/interp = 1
-tracks/4/loop_wrap = true
-tracks/4/keys = {
-"times": PackedFloat32Array(0.1, 1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(453.66663, 440.5833), Vector2(453.667, 900)]
-}
-tracks/5/type = "value"
-tracks/5/imported = false
-tracks/5/enabled = true
-tracks/5/path = NodePath("VBoxContainer/Room207/VBoxContainer/Exit:position")
-tracks/5/interp = 1
-tracks/5/loop_wrap = true
-tracks/5/keys = {
-"times": PackedFloat32Array(0, 1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(458.16663, 529.0833), Vector2(458.167, 1000)]
-}
-tracks/6/type = "value"
-tracks/6/imported = false
-tracks/6/enabled = true
-tracks/6/path = NodePath("SilakRayaLogo:position")
-tracks/6/interp = 1
-tracks/6/loop_wrap = true
-tracks/6/keys = {
-"times": PackedFloat32Array(0, 0.98),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(77, 578.99994), Vector2(77, 800)]
-}
-tracks/7/type = "value"
-tracks/7/imported = false
-tracks/7/enabled = true
-tracks/7/path = NodePath("GodotLogo:position")
-tracks/7/interp = 1
-tracks/7/loop_wrap = true
-tracks/7/keys = {
-"times": PackedFloat32Array(0, 1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(1033.0001, 589.00006), Vector2(1033, 800)]
-}
-
-[sub_resource type="Animation" id="Animation_vwu2b"]
+[sub_resource type="Animation" id="Animation_du1xd"]
 length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("VBoxContainer:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(254.16699, 700)]
-}
 
 [sub_resource type="Animation" id="Animation_x84d5"]
 resource_name = "eraseTransition"
@@ -220,25 +59,19 @@ tracks/1/keys = {
 "values": [Vector2(-353.60837, -1709.8854), Vector2(-353.6084, -1709.8854), Vector2(657.2726, -768.1818)]
 }
 
-[sub_resource type="Animation" id="Animation_2a578"]
-resource_name = "newGameMouseE"
-
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_du1xd"]
 _data = {
-&"EpisodeSelect": SubResource("Animation_ym82n"),
-&"EpisodeSelection": SubResource("Animation_48x7w"),
-&"Intro": SubResource("Animation_5oj8p"),
 &"MainMenu": SubResource("Animation_0iell"),
-&"NewGame": SubResource("Animation_dmqj3"),
-&"RESET": SubResource("Animation_vwu2b"),
-&"eraseTransition": SubResource("Animation_x84d5"),
-&"newGameMouseE": SubResource("Animation_2a578")
+&"RESET": SubResource("Animation_du1xd"),
+&"eraseTransition": SubResource("Animation_x84d5")
 }
 
 [sub_resource type="LabelSettings" id="LabelSettings_48x7w"]
 font = ExtResource("3_iwfq2")
 font_size = 47
-font_color = Color(0, 0, 0, 1)
+outline_size = 28
+outline_color = Color(0, 0, 0, 1)
+shadow_size = 0
 
 [node name="MainMenu" type="Control" unique_id=1406051104]
 layout_mode = 3
@@ -253,19 +86,15 @@ scale = Vector2(1.1, 1.1)
 script = ExtResource("1_iwfq2")
 
 [node name="GoldBackground" type="Sprite2D" parent="." unique_id=347698177]
-position = Vector2(585.58704, 325.42328)
-scale = Vector2(0.71602464, 0.7202565)
+position = Vector2(581.8181, 327.27277)
+scale = Vector2(0.46361366, 0.4663537)
+texture = ExtResource("2_ym82n")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=957873264]
+visible = false
+position = Vector2(586.36365, 306.36362)
+scale = Vector2(1, 0.9999999)
 texture = ExtResource("1_h7a2f")
-
-[node name="SilakRayaLogo" type="Sprite2D" parent="." unique_id=1187673172]
-position = Vector2(77, 578.99994)
-scale = Vector2(0.282, 0.282)
-texture = ExtResource("2_qoqlk")
-
-[node name="GodotLogo" type="Sprite2D" parent="." unique_id=491018296]
-position = Vector2(1033.0001, 589.00006)
-scale = Vector2(0.0957031, 0.0957031)
-texture = ExtResource("4_qoqlk")
 
 [node name="VBoxContainer" type="Control" parent="." unique_id=2104897267]
 layout_mode = 1
@@ -277,7 +106,7 @@ anchor_bottom = 0.5
 offset_left = -327.49963
 offset_top = 370.4167
 offset_right = 327.50037
-offset_bottom = 870.41547
+offset_bottom = 870.4145
 grow_horizontal = 2
 grow_vertical = 2
 
@@ -288,10 +117,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = 45.227264
-offset_top = -196.36302
-offset_right = 700.2273
-offset_bottom = 3.6369781
+offset_left = -336.21207
+offset_top = -57.27162
+offset_right = 318.7879
+offset_bottom = 142.7284
 grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 4
@@ -307,7 +136,7 @@ offset_bottom = 461.45538
 
 [node name="NewGame" type="Button" parent="VBoxContainer/Room207/VBoxContainer" unique_id=1358217977]
 layout_mode = 2
-theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("3_iwfq2")
 theme_override_font_sizes/font_size = 62
 text = "New GAME"
@@ -315,7 +144,7 @@ flat = true
 
 [node name="Options" type="Button" parent="VBoxContainer/Room207/VBoxContainer" unique_id=163192621]
 layout_mode = 2
-theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("3_iwfq2")
 theme_override_font_sizes/font_size = 62
 text = "OPTIONS"
@@ -323,7 +152,7 @@ flat = true
 
 [node name="Credits" type="Button" parent="VBoxContainer/Room207/VBoxContainer" unique_id=11112599]
 layout_mode = 2
-theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("3_iwfq2")
 theme_override_font_sizes/font_size = 62
 text = "Credits"
@@ -331,7 +160,7 @@ flat = true
 
 [node name="Exit" type="Button" parent="VBoxContainer/Room207/VBoxContainer" unique_id=1315693501]
 layout_mode = 2
-theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("3_iwfq2")
 theme_override_font_sizes/font_size = 62
 text = "Exit"
@@ -429,10 +258,10 @@ flat = true
 
 [node name="version" type="Label" parent="." unique_id=1786094486]
 layout_mode = 0
-offset_left = 9.090909
-offset_top = 12.727272
-offset_right = 193.09091
-offset_bottom = 60.727272
+offset_left = 15.454546
+offset_top = 600.90906
+offset_right = 199.45454
+offset_bottom = 648.90906
 text = "VER: 1.1.12"
 label_settings = SubResource("LabelSettings_48x7w")
 
@@ -442,6 +271,7 @@ position = Vector2(964.5454, 519.0909)
 [node name="AudioStreamPlayer2D" parent="." unique_id=258840311 instance=ExtResource("10_2a578")]
 
 [node name="SilakRayaIntro" parent="." unique_id=25384718 instance=ExtResource("11_0iell")]
+visible = false
 position = Vector2(-55.454544, -22.727272)
 scale = Vector2(2, 2)
 script = null

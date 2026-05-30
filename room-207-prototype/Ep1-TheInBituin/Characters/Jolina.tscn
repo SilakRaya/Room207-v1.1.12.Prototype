@@ -16,6 +16,3 @@ texture = ExtResource("2_fhl5q")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=582082926]
 position = Vector2(0, -2.5)
 shape = SubResource("RectangleShape2D_f3c18")
-
-[node name="Camera2D" type="Camera2D" parent="." unique_id=1177172646]
-offset = Vector2(0, -50)

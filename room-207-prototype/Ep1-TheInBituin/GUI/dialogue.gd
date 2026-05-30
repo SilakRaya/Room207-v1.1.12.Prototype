@@ -4,12 +4,12 @@ extends Control
 # Enter dialogue here! through properties
 @export var _Jolina_Lines:Array[String] = []
 @export var repeat:bool = false
+@export var _typing_speed:float = 0.1
 
 var _full_text:String = ""
 var index:int = 0
 var dialogue:int = 0
 var typing:bool = false
-var _typing_speed:float = 0.1
 
 
 @onready var _typing_timer: Timer = $TypingTimer
@@ -23,6 +23,8 @@ func _process(_delta: float) -> void:
 
 # Abstraction
 func displayText(new_text: String) -> void:
+	typing = true #this check if it is still typing
+	
 	_full_text = new_text
 	
 	# Reset typing
@@ -35,6 +37,9 @@ func displayText(new_text: String) -> void:
 	%Text.text = _full_text
 
 func switchText() -> void:
+	if typing:
+		return
+	
 	if dialogue < _Jolina_Lines.size() - 1:
 		dialogue += 1
 	else:
@@ -52,3 +57,4 @@ func _on_typing_timer_timeout() -> void:
 	
 	if index >= _full_text.length():
 		_typing_timer.stop()
+		typing = false

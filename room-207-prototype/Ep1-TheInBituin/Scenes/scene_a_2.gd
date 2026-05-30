@@ -1,4 +1,5 @@
 extends Node2D
 
 func _ready() -> void:
-	$AnimationPlayer.play("Firefly")
+	$camera_zoom_out.play("camera_zoom_out")
+	$audio.play("Firefly")

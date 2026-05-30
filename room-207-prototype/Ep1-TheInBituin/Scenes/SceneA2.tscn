@@ -3,10 +3,12 @@
 [ext_resource type="AudioStream" uid="uid://bodrcxpl4fo1a" path="res://Ost/Room207-Vivid.wav" id="1_jpnmx"]
 [ext_resource type="Script" uid="uid://oyfspcne8ya8" path="res://Ep1-TheInBituin/Scenes/scene_a_2.gd" id="1_oevfs"]
 [ext_resource type="PackedScene" uid="uid://b4t83ss3mw30s" path="res://Ep1-TheInBituin/GUI/Dialogue.tscn" id="3_jt7db"]
+[ext_resource type="PackedScene" uid="uid://dt2xykj4k2h6m" path="res://Ep1-TheInBituin/Characters/Jolina.tscn" id="4_qw24q"]
+[ext_resource type="Texture2D" uid="uid://cqlya3pwemonw" path="res://icon.svg" id="5_htubx"]
 
 [sub_resource type="Animation" id="Animation_jpnmx"]
 resource_name = "Firefly"
-length = 12.9
+length = 101.5536
 tracks/0/type = "audio"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -49,11 +51,40 @@ tracks/0/keys = {
 "update": 1,
 "values": [true]
 }
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Camera2D:zoom")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0.87, 0.87)]
+}
+
+[sub_resource type="Animation" id="Animation_qw24q"]
+resource_name = "camera_zoom_out"
+length = 50.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Camera2D:zoom")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 49.966667),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0.87, 0.87), Vector2(0.7, 0.7)]
+}
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_oevfs"]
 _data = {
 &"Firefly": SubResource("Animation_jpnmx"),
-&"RESET": SubResource("Animation_oevfs")
+&"RESET": SubResource("Animation_oevfs"),
+&"camera_zoom_out": SubResource("Animation_qw24q")
 }
 
 [node name="SceneA2" type="Node2D" unique_id=1612319344]
@@ -63,7 +94,7 @@ script = ExtResource("1_oevfs")
 autoplay = true
 playback_type = 1
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=892016199]
+[node name="audio" type="AnimationPlayer" parent="." unique_id=892016199]
 libraries/ = SubResource("AnimationLibrary_oevfs")
 
 [node name="Dialogue" parent="." unique_id=522377500 instance=ExtResource("3_jt7db")]
@@ -73,10 +104,34 @@ anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
 offset_left = 640.0
-offset_top = 344.0
+offset_top = 152.0
 offset_right = 640.0
-offset_bottom = 344.0
+offset_bottom = 152.0
 grow_horizontal = 1
 grow_vertical = 1
 _Jolina_Lines = Array[String](["...", "Where am I?", "Oh-", "I-", "I had the same dream again-"])
 metadata/_edit_use_anchors_ = true
+
+[node name="Jolina" parent="." unique_id=810497922 instance=ExtResource("4_qw24q")]
+position = Vector2(640, 358)
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=797853511]
+position = Vector2(640, 288)
+zoom = Vector2(0.87, 0.87)
+
+[node name="Icon" type="Sprite2D" parent="." unique_id=1082562953]
+position = Vector2(-152, 696)
+texture = ExtResource("5_htubx")
+
+[node name="camera_zoom_out" type="AnimationPlayer" parent="." unique_id=692234213]
+libraries/ = SubResource("AnimationLibrary_oevfs")
+
+[node name="Label" type="Label" parent="." unique_id=1285274590]
+offset_left = -320.0
+offset_top = 560.0
+offset_right = 67.0
+offset_bottom = 609.0
+text = "don't mind me im just a dummy test if the camera
+is really zooming out"
+horizontal_alignment = 1
+vertical_alignment = 1

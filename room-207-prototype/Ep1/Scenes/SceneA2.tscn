@@ -16,7 +16,7 @@ font_size = 63
 script = ExtResource("1_oevfs")
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=1824647487]
-position = Vector2(6198, 486)
+position = Vector2(8696, 390)
 stream = ExtResource("2_lhwjw")
 autoplay = true
 max_distance = 4096.0
@@ -30,114 +30,177 @@ unique_name_in_owner = true
 modulate = Color(1, 1, 1, 0.31500003)
 position = Vector2(2232, 486)
 scale = Vector2(1.9324505, 2.848267)
+metadata/_edit_group_ = true
+
+[node name="Classroom base" type="Node2D" parent="201" unique_id=2058184713]
+position = Vector2(-1004.92615, -33.704712)
+scale = Vector2(5.748607, 1.9672481)
+
+[node name="Icon" type="Sprite2D" parent="201/Classroom base" unique_id=582452357]
+modulate = Color(0.24526232, 0.22935726, 0, 0.23300001)
+position = Vector2(176.70386, -2.801241)
+scale = Vector2(1.5190313, 1.0437695)
+texture = ExtResource("5_htubx")
 
 [node name="Icon2" type="Sprite2D" parent="201" unique_id=326428522]
+position = Vector2(427.95404, 0)
 texture = ExtResource("5_htubx")
+
+[node name="Label2" type="Label" parent="201/Icon2" unique_id=1326714772]
+offset_left = -36.22351
+offset_top = -90.2303
+offset_right = 40.77649
+offset_bottom = -67.2303
+text = "Room 201"
 
 [node name="Icon" type="Sprite2D" parent="201" unique_id=1794420440]
-position = Vector2(-456.41528, 0)
+position = Vector2(-406.21994, 0)
 texture = ExtResource("5_htubx")
 
-[node name="Label" type="Label" parent="201" unique_id=69611706]
-offset_left = -498.8485
+[node name="Label" type="Label" parent="201/Icon" unique_id=69611706]
+offset_left = -42.43335
 offset_top = -90.2303
-offset_right = -421.8485
+offset_right = 34.56665
 offset_bottom = -67.2303
 text = "Room 201"
 
-[node name="Label2" type="Label" parent="201" unique_id=1326714772]
-offset_left = -36.740936
-offset_top = -90.2303
-offset_right = 40.259064
-offset_bottom = -67.2303
-text = "Room 201"
-
-[node name="203" type="Node2D" parent="." unique_id=390054680]
+[node name="202" type="Node2D" parent="." unique_id=129788510]
 unique_name_in_owner = true
 modulate = Color(1, 1, 1, 0.31500003)
-position = Vector2(3853.0002, 486)
+position = Vector2(4385, 486)
 scale = Vector2(1.9324505, 2.848267)
+metadata/_edit_group_ = true
 
-[node name="Icon2" type="Sprite2D" parent="203" unique_id=1180688455]
+[node name="Classroom base" type="Node2D" parent="202" unique_id=1358518325]
+position = Vector2(-1004.92615, -33.704712)
+scale = Vector2(5.748607, 1.9672481)
+
+[node name="Icon" type="Sprite2D" parent="202/Classroom base" unique_id=1449612603]
+modulate = Color(0.24526232, 0.22935726, 0, 0.23300001)
+position = Vector2(176.70386, -2.801241)
+scale = Vector2(1.5190313, 1.0437695)
 texture = ExtResource("5_htubx")
 
-[node name="Icon" type="Sprite2D" parent="203" unique_id=310016071]
-position = Vector2(-456.41528, 0)
+[node name="Icon2" type="Sprite2D" parent="202" unique_id=775576488]
+position = Vector2(427.95404, 0)
 texture = ExtResource("5_htubx")
 
-[node name="Label" type="Label" parent="203" unique_id=1596623490]
-offset_left = -498.8485
+[node name="Label2" type="Label" parent="202/Icon2" unique_id=398815292]
+offset_left = -36.22351
 offset_top = -90.2303
-offset_right = -421.8485
+offset_right = 40.77649
 offset_bottom = -67.2303
 text = "Room 203"
 
-[node name="Label2" type="Label" parent="203" unique_id=1974000799]
-offset_left = -36.740936
+[node name="Icon" type="Sprite2D" parent="202" unique_id=1384198859]
+position = Vector2(-406.21994, 0)
+texture = ExtResource("5_htubx")
+
+[node name="Label" type="Label" parent="202/Icon" unique_id=1913033781]
+offset_left = -42.43335
 offset_top = -90.2303
-offset_right = 40.259064
+offset_right = 34.56665
 offset_bottom = -67.2303
 text = "Room 203"
 
-[node name="205" type="Node2D" parent="." unique_id=1418272201]
+[node name="203" type="Node2D" parent="." unique_id=1175603831]
 unique_name_in_owner = true
 modulate = Color(1, 1, 1, 0.31500003)
-position = Vector2(5465, 486)
+position = Vector2(6538, 486)
 scale = Vector2(1.9324505, 2.848267)
+metadata/_edit_group_ = true
 
-[node name="Icon2" type="Sprite2D" parent="205" unique_id=1217929409]
+[node name="Classroom base" type="Node2D" parent="203" unique_id=1733799996]
+position = Vector2(-1004.92615, -33.704712)
+scale = Vector2(5.748607, 1.9672481)
+
+[node name="Icon" type="Sprite2D" parent="203/Classroom base" unique_id=525499706]
+modulate = Color(0.24526232, 0.22935726, 0, 0.23300001)
+position = Vector2(176.70386, -2.801241)
+scale = Vector2(1.5190313, 1.0437695)
 texture = ExtResource("5_htubx")
 
-[node name="Icon" type="Sprite2D" parent="205" unique_id=1173589929]
-position = Vector2(-456.41528, 0)
+[node name="Icon2" type="Sprite2D" parent="203" unique_id=169721908]
+position = Vector2(427.95404, 0)
 texture = ExtResource("5_htubx")
 
-[node name="Label" type="Label" parent="205" unique_id=423525158]
-offset_left = -498.8485
+[node name="Label2" type="Label" parent="203/Icon2" unique_id=521726426]
+offset_left = -36.22351
 offset_top = -90.2303
-offset_right = -421.8485
+offset_right = 40.77649
 offset_bottom = -67.2303
 text = "Room 205"
 
-[node name="Label2" type="Label" parent="205" unique_id=98906931]
-offset_left = -36.740936
+[node name="Icon" type="Sprite2D" parent="203" unique_id=730341558]
+position = Vector2(-406.21994, 0)
+texture = ExtResource("5_htubx")
+
+[node name="Label" type="Label" parent="203/Icon" unique_id=532457749]
+offset_left = -42.43335
 offset_top = -90.2303
-offset_right = 40.259064
+offset_right = 34.56665
 offset_bottom = -67.2303
 text = "Room 205"
 
-[node name="207" type="Node2D" parent="." unique_id=1337596930]
+[node name="204" type="Node2D" parent="." unique_id=1358547286]
 unique_name_in_owner = true
 modulate = Color(1, 1, 1, 0.31500003)
-position = Vector2(7067.0005, 486)
+position = Vector2(8696, 486)
 scale = Vector2(1.9324505, 2.848267)
+metadata/_edit_group_ = true
 
-[node name="Icon2" type="Sprite2D" parent="207" unique_id=657257355]
+[node name="Classroom base" type="Node2D" parent="204" unique_id=85454293]
+position = Vector2(-1004.92615, -33.704712)
+scale = Vector2(5.748607, 1.9672481)
+
+[node name="Icon" type="Sprite2D" parent="204/Classroom base" unique_id=1396268750]
+modulate = Color(0.24526232, 0.22935726, 0, 0.23300001)
+position = Vector2(176.70386, -2.801241)
+scale = Vector2(1.5190313, 1.0437695)
 texture = ExtResource("5_htubx")
 
-[node name="Icon" type="Sprite2D" parent="207" unique_id=1287861016]
-modulate = Color(1, 0.24269372, 0.62863654, 1)
-position = Vector2(-456.41528, 0)
+[node name="Icon2" type="Sprite2D" parent="204" unique_id=885540434]
+position = Vector2(427.95404, 0)
 texture = ExtResource("5_htubx")
 
-[node name="Label" type="Label" parent="207" unique_id=1614597321]
-offset_left = -498.8485
+[node name="Label2" type="Label" parent="204/Icon2" unique_id=1720800642]
+offset_left = -36.22351
 offset_top = -90.2303
-offset_right = -421.8485
+offset_right = 40.77649
 offset_bottom = -67.2303
 text = "Room 207"
 
-[node name="Label2" type="Label" parent="207" unique_id=1749843400]
-offset_left = -36.740936
+[node name="Icon" type="Sprite2D" parent="204" unique_id=1046879605]
+position = Vector2(-406.21994, 0)
+texture = ExtResource("5_htubx")
+
+[node name="Label" type="Label" parent="204/Icon" unique_id=563141422]
+offset_left = -42.43335
 offset_top = -90.2303
-offset_right = 40.259064
+offset_right = 34.56665
 offset_bottom = -67.2303
 text = "Room 207"
 
-[node name="Icon" type="Sprite2D" parent="." unique_id=1181132052]
+[node name="Stairs" type="Node2D" parent="." unique_id=369740609]
+position = Vector2(290.03027, 389.99997)
+scale = Vector2(14.219396, 5.603248)
+metadata/_edit_group_ = true
+
+[node name="Icon" type="Sprite2D" parent="Stairs" unique_id=1181132052]
 modulate = Color(0.03501795, 0.24763227, 0.3095626, 0.3529412)
-position = Vector2(290.03076, 390)
-scale = Vector2(11.108896, 5.603248)
+position = Vector2(4.386902e-05, 0)
+scale = Vector2(0.9999998, 0.99999994)
+texture = ExtResource("5_htubx")
+
+[node name="Stairs2" type="Node2D" parent="." unique_id=844808301]
+position = Vector2(10701, 389.99997)
+scale = Vector2(14.219396, 5.603248)
+metadata/_edit_group_ = true
+
+[node name="Icon" type="Sprite2D" parent="Stairs2" unique_id=638021587]
+modulate = Color(0.03501795, 0.24763227, 0.3095626, 0.3529412)
+position = Vector2(4.386902e-05, 0)
+scale = Vector2(0.9999998, 0.99999994)
 texture = ExtResource("5_htubx")
 
 [node name="Jolina" parent="." unique_id=810497922 instance=ExtResource("4_qw24q")]
@@ -176,6 +239,7 @@ zoom = Vector2(0.51, 0.51)
 unique_name_in_owner = true
 position = Vector2(5465, 845)
 scale = Vector2(104.98642, -2.9432998)
+metadata/_edit_group_ = true
 
 [node name="Icon" type="Sprite2D" parent="GroundFloor" unique_id=1632451165]
 modulate = Color(0.495847, 0.29349047, 0, 1)
@@ -189,12 +253,27 @@ shape = SubResource("RectangleShape2D_lhwjw")
 unique_name_in_owner = true
 position = Vector2(-1547, -128.99998)
 scale = Vector2(4.7005324, 18.180653)
+metadata/_edit_group_ = true
 
 [node name="Icon" type="Sprite2D" parent="GroundFloor2" unique_id=1807216145]
 modulate = Color(0.495847, 0.29349047, 0, 1)
 texture = ExtResource("5_htubx")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="GroundFloor2" unique_id=1581707067]
+position = Vector2(-0.5, 0)
+shape = SubResource("RectangleShape2D_lhwjw")
+
+[node name="GroundFloor3" type="StaticBody2D" parent="." unique_id=136757524]
+unique_name_in_owner = true
+position = Vector2(12383, -129.00002)
+scale = Vector2(4.7005324, 18.180653)
+metadata/_edit_group_ = true
+
+[node name="Icon" type="Sprite2D" parent="GroundFloor3" unique_id=1855687125]
+modulate = Color(0.495847, 0.29349047, 0, 1)
+texture = ExtResource("5_htubx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="GroundFloor3" unique_id=1417744547]
 position = Vector2(-0.5, 0)
 shape = SubResource("RectangleShape2D_lhwjw")
 

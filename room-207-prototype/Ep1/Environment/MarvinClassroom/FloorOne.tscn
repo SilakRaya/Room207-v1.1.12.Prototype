@@ -12,8 +12,15 @@ size = Vector2(127, 128)
 [sub_resource type="LabelSettings" id="LabelSettings_lhwjw"]
 font_size = 63
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_27dpn"]
+size = Vector2(127, 130)
+
+[sub_resource type="LabelSettings" id="LabelSettings_cdqbc"]
+font_size = 33
+
 [node name="FloorOne" type="Node2D" unique_id=1612319344]
 script = ExtResource("1_27dpn")
+metadata/_edit_vertical_guides_ = [5715.0]
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=1824647487]
 position = Vector2(5486, 229)
@@ -205,7 +212,7 @@ scale = Vector2(0.9999998, 0.99999994)
 texture = ExtResource("3_11hwv")
 
 [node name="Jolina" parent="." unique_id=810497922 instance=ExtResource("4_1an53")]
-position = Vector2(6538, 535)
+position = Vector2(6538, 492)
 
 [node name="Control" type="Control" parent="Jolina" unique_id=1212885880]
 layout_mode = 3
@@ -285,3 +292,55 @@ offset_right = 184.0
 offset_bottom = 183.0
 text = "Stairs to 2nd floor"
 label_settings = SubResource("LabelSettings_lhwjw")
+
+[node name="ChairObstacles" type="StaticBody2D" parent="." unique_id=558117325]
+modulate = Color(1, 1, 1, 0.56700003)
+position = Vector2(8996, 486)
+scale = Vector2(6.812918, 6.179498)
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="ChairObstacles" unique_id=1183963939]
+texture = ExtResource("3_11hwv")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ChairObstacles" unique_id=823076839]
+position = Vector2(-0.5, 1)
+shape = SubResource("RectangleShape2D_27dpn")
+debug_color = Color(0.841581, 0.32422376, 0.5307359, 0.41960785)
+
+[node name="EventObstacles" type="StaticBody2D" parent="." unique_id=1187264236]
+modulate = Color(1, 1, 1, 0.56700003)
+position = Vector2(4430.0005, 443.99997)
+scale = Vector2(6.812918, 6.179498)
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="EventObstacles" unique_id=2122111596]
+position = Vector2(-0.5, 1)
+shape = SubResource("RectangleShape2D_27dpn")
+debug_color = Color(0.841581, 0.32422376, 0.5307359, 0.41960785)
+
+[node name="dev-ken" type="Label" parent="." unique_id=2108762613]
+offset_left = 8644.0
+offset_top = 487.0
+offset_right = 9118.0
+offset_bottom = 590.0
+text = "These are chairs stacked, 
+as an obstacle for the player"
+label_settings = SubResource("LabelSettings_cdqbc")
+
+[node name="dev-ken2" type="Label" parent="." unique_id=230465718]
+offset_left = 4070.0
+offset_top = 390.0
+offset_right = 4747.0
+offset_bottom = 534.0
+text = "This is a way to prevent, the player
+from proceeding until the player reach the
+firefly scene!"
+label_settings = SubResource("LabelSettings_cdqbc")
+
+[node name="dev-ken3" type="Label" parent="." unique_id=1570416805]
+offset_left = 6045.0
+offset_top = -129.0
+offset_right = 6722.0
+offset_bottom = 15.0
+text = "The player should not be able to move unless, until the firefly scene"
+label_settings = SubResource("LabelSettings_cdqbc")
